@@ -31,15 +31,14 @@ public class LoginApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         /// Load the UI Component descriptors from the FXML file
-        /// and create a Scene creating those components.
         FXMLLoader fxmlLoader = new FXMLLoader(LoginApplication.class.getResource("login-view.fxml"));
+        /// create a 'Scene' to contain those UI components.
         Scene scene = new Scene(fxmlLoader.load(), 420, 480);
         /// The FXMLLoader will also create the LoginController that
-        /// is named in the FXML file, and associates it w
+        /// is named in the FXML file, and associates it with the UI controls.
 
         stage.setTitle("Facebook Login");
         stage.setScene(scene);  /// add the Scene to the Stage.
         stage.show();
     }
-
 }
