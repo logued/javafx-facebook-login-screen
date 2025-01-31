@@ -50,4 +50,10 @@ public class LoginController {
         this.emailField.clear();
         this.passwordField.clear();
     }
+
+    public void initialize() {
+        // this method is called after the controller constructor is executed
+        // and after the @FXML fields are populated (injected)
+        // In this sample app, we don't need to use this method.
+    }
 }
