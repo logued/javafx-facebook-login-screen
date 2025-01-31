@@ -23,22 +23,22 @@ public class LoginApplication extends Application {
         launch(); // launch (create) this JavaFX Application
     }
 
-    /// When this Application is launched (created), the start() method in the
-    /// App is automatically called, and a "Stage" is passed in as an argument.
+    /// When this Application is launched, the start() method in the
+    /// App is automatically called, and a "Stage" object is passed in as an argument.
     /// The Stage represents the window that we can add our "Scene" to.
     /// The Scene contains a hierarchy of UI Controls that are loaded by FXMLLoader.load()
     ///
     @Override
     public void start(Stage stage) throws IOException {
-        // Load the UI Component descriptors from the FXML file
-        // and create a Scene creating those components.
+        /// Load the UI Component descriptors from the FXML file
+        /// and create a Scene creating those components.
         FXMLLoader fxmlLoader = new FXMLLoader(LoginApplication.class.getResource("login-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 420, 480);
-        /// JavaFX will also create the LoginController that is named in the
-        ///  FXML file, and associates it with the loader.
+        /// The FXMLLoader will also create the LoginController that
+        /// is named in the FXML file, and associates it w
 
         stage.setTitle("Facebook Login");
-        stage.setScene(scene);  // add the Scene to the Stage.
+        stage.setScene(scene);  /// add the Scene to the Stage.
         stage.show();
     }
 
