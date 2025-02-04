@@ -7,8 +7,8 @@
      The Controller for this GUI is identified by name in the code below.
      Here, it is called "LoginController"
      The FXMLLoader instantiates the named Controller, instantiates each of the
-     UI controls, and then binds these UI controls to reference variables in the
-     Controller.  (using Dependency Injection).
+     UI controls, and then binds the identified UI controls to annotated reference variables
+     defined in the Controller.  (using Dependency Injection).
 -->
 
 <?import javafx.geometry.*?>
@@ -16,6 +16,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
+<!-- VBox is a layout container to store UI Controls in a vertical layout.
+      Here, we also identify the CONTROLLER class for this GUI - which is automatically instantiated.
+      The UI Controls here are bound (linked with) fields in the Controller class by name
+      e.g. fx:id="emailField"
+-->
 <VBox alignment="CENTER" opacity="0.8" prefHeight="571.0" prefWidth="509.0" spacing="20.0"
       xmlns="http://javafx.com/javafx/17.0.12"
       xmlns:fx="http://javafx.com/fxml/1"

@@ -34,7 +34,7 @@ public class LoginApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(LoginApplication.class.getResource("login-view.fxml"));
         /// create a 'Scene' to contain those UI components.
         Scene scene = new Scene(fxmlLoader.load(), 420, 480);
-        /// The FXMLLoader will also create the LoginController that
+        /// The FXMLLoader will also instantiate the LoginController that
         /// is named in the FXML file, and associates it with the UI controls.
 
         stage.setTitle("Facebook Login");
